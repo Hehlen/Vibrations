@@ -1,0 +1,12 @@
+#input files
+pdb_file="/media/bhehlen/Expansion/CD16_newDyna/nofuc1/MULTIDIR/2/merged_files/step3_input_no_water_no_ions.pdb"
+traj_file="/media/bhehlen/Expansion/CD16_newDyna/nofuc1/MULTIDIR/2/merged_files/all_aligned_no_water_no_ions.xtc"
+
+
+#traj parameters
+dt=0.2   # in ns
+# correlation function parameters
+traj_min=2500
+traj_max=3500
+
+
