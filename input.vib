@@ -6,7 +6,23 @@ traj_file="/media/bhehlen/Expansion/CD16_newDyna/nofuc1/MULTIDIR/2/merged_files/
 #traj parameters
 dt=0.2   # in ns
 # correlation function parameters
-traj_min=2500
-traj_max=3500
+traj_min=2000
+traj_max=3000
+
+\
+# Define two atom/unit selections
+#selection1 = u.select_atoms("segid CARA and resnum 1 and name O6")
+#selection1 = u.select_atoms("segid CARB and resnum 1")
+#selection1 = u.select_atoms("segid PROA and resname ASP and resid 239")
+selection1 = u.select_atoms("segid PROA")
+#
+#
+##selection2 = u.select_atoms("segid CARC and resnum 4 and name HO6")
+#selection2 = u.select_atoms("segid CARC and resnum 4")
+#selection2 = u.select_atoms("segid PROC and resname LYS and resid 138")
+selection2 = u.select_atoms("segid PROC")
+
+
+
 
 
