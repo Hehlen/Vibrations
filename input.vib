@@ -1,24 +1,26 @@
 #input files
-pdb_file="/media/bhehlen/Expansion/CD16_newDyna/nofuc1/MULTIDIR/2/merged_files/step3_input_no_water_no_ions.pdb"
-traj_file="/media/bhehlen/Expansion/CD16_newDyna/nofuc1/MULTIDIR/2/merged_files/all_aligned_no_water_no_ions.xtc"
+pdb_file="/media/bhehlen/Expansion/CD16_newDyna/3ay4/1_ns/multidir/2/merged_files/step3_input_no_water_no_ions.pdb"
+traj_file="/media/bhehlen/Expansion/CD16_newDyna/3ay4/1_ns/multidir/2/merged_files/all_aligned_no_water_no_ions.xtc"
 
 
 #traj parameters
-dt=0.2   # in ns
+dt=0.2   # in ns => traj 1mus
+dt=0.0002 # 	 => traj 1 ns
 # correlation function parameters
-traj_min=2000
-traj_max=3000
+traj_min=3000
+dtraj=1000
+traj_segments=1
 
 \
 # Define two atom/unit selections
 #selection1 = u.select_atoms("segid CARA and resnum 1 and name O6")
-#selection1 = u.select_atoms("segid CARB and resnum 1")
+#selection1 = u.select_atoms("segid CARA and resnum 1")
 #selection1 = u.select_atoms("segid PROA and resname ASP and resid 239")
 selection1 = u.select_atoms("segid PROA")
 #
 #
-##selection2 = u.select_atoms("segid CARC and resnum 4 and name HO6")
-#selection2 = u.select_atoms("segid CARC and resnum 4")
+#selection2 = u.select_atoms("segid CARC and resnum 1 and name HO6")
+#selection2 = u.select_atoms("segid CARC and resnum 2")
 #selection2 = u.select_atoms("segid PROC and resname LYS and resid 138")
 selection2 = u.select_atoms("segid PROC")
 
